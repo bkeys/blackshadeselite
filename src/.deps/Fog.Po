@@ -1,0 +1,85 @@
+src/Fog.o: src/Fog.cpp /usr/include/stdc-predef.h src/Fog.h \
+ /usr/include/GL/gl.h /usr/include/GL/glext.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stddef.h \
+ /usr/include/inttypes.h /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h src/Quaternions.h \
+ src/Maths.h /usr/include/c++/4.9.2/cmath \
+ /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/c++config.h \
+ /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/os_defines.h \
+ /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/cpu_defines.h \
+ /usr/include/c++/4.9.2/bits/cpp_type_traits.h \
+ /usr/include/c++/4.9.2/ext/type_traits.h /usr/include/math.h \
+ /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
+ /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
+ /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathinline.h \
+ src/PhysicsMath.h src/Colors.h
+
+/usr/include/stdc-predef.h:
+
+src/Fog.h:
+
+/usr/include/GL/gl.h:
+
+/usr/include/GL/glext.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stddef.h:
+
+/usr/include/inttypes.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wchar.h:
+
+src/Quaternions.h:
+
+src/Maths.h:
+
+/usr/include/c++/4.9.2/cmath:
+
+/usr/include/c++/4.9.2/x86_64-redhat-linux/bits/c++config.h:
+
+/usr/include/c++/4.9.2/x86_64-redhat-linux/bits/os_defines.h:
+
+/usr/include/c++/4.9.2/x86_64-redhat-linux/bits/cpu_defines.h:
+
+/usr/include/c++/4.9.2/bits/cpp_type_traits.h:
+
+/usr/include/c++/4.9.2/ext/type_traits.h:
+
+/usr/include/math.h:
+
+/usr/include/bits/huge_val.h:
+
+/usr/include/bits/huge_valf.h:
+
+/usr/include/bits/huge_vall.h:
+
+/usr/include/bits/inf.h:
+
+/usr/include/bits/nan.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/mathinline.h:
+
+src/PhysicsMath.h:
+
+src/Colors.h:
