@@ -1,5 +1,5 @@
 /*
- * Image.h
+ * Button.h 
  * Copyright (C) 2007 by Bryan Duff <duff0097@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -17,43 +17,36 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
  * USA
  */
-#ifndef _GUI_IMAGE_H_
-#define _GUI_IMAGE_H_
+#ifndef _GUI_BUTTON_H_
+#define _GUI_BUTTON_H_
 
-#include "Quaternions.h"
+#include <string>
 #include <GL/gl.h>
 #include <GL/glu.h>
 
-#include <string>
+#include "Quaternions.hpp"
+#include "Window.hpp"
 
-#include "Window.h"
-#include "Colors.h"
+/* Currently this is only a logical button (it doesn't display anything)
+ * it consists only of state information.
+ * TODO: DrawButton() would consist of drawing a child text and image window.
+ */
 
-#define NUM_TEXTURES 2
-
-class Image:public Window {
+class Button : public Window {
 public:
-  Image();
-  ~Image() {
-  } void setDim(float _xpos, float _ypos, float _xwidth, float _yheight);
-  void setImage(GLuint _texture, unsigned int index);
-  void setActive(unsigned int index);
-  void setColor(Color _color);
-  void update(float _sinefluct, float _sinefluctprog);
-#if 0
-  void glScale(float x, float y);
-  void glTranslate(float x, float y);
-  void glRotate(float deg, float x, float y, float z);
-  void glColor(float r, float g, float b, float a);
-#endif
-  void draw();
+  Button();
+  Button(float xpos, float ypos, float xwidth, float yheight);
+  ~Button() {};
+  void setButton(float xpos, float ypos, float xwidth, float yheight);
+  bool isMouseOver(bool recalc, float _xpos=0, float _ypos=0);
+  void setPressed(bool _pressed) { pressed = _pressed; }
+  bool isPressed() { return pressed; }
 
 private:
-  GLfloat xpos, ypos, xwidth, yheight;
-  unsigned int index;
-  GLuint texture[NUM_TEXTURES];
-  float sinefluct, sinefluctprog;
-  Color color;
+  GLfloat xpos, ypos;
+  GLfloat xwidth, yheight;
+  bool mouseover;
+  bool pressed;
 };
 
 #endif

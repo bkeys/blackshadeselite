@@ -27,9 +27,9 @@
 
 #include <SDL/SDL.h>
 
-#include "Support.h"
-#include "Files.h"
-#include "Config.h"
+#include "Support.hpp"
+#include "Files.hpp"
+#include "Config.hpp"
 
 extern Config config;
 

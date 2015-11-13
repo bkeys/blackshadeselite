@@ -23,7 +23,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "Support.h"
+#include "Support.hpp"
 
 /**> CONSTANT DECLARATIONS <**/
 // Mac Keyboard Codes

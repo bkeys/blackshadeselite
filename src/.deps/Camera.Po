@@ -12,11 +12,11 @@ src/Camera.o: src/Camera.cpp /usr/include/stdc-predef.h \
  /usr/include/bits/sigset.h /usr/include/bits/time.h \
  /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
  /usr/include/alloca.h /usr/include/bits/stdlib-bsearch.h \
- /usr/include/bits/stdlib-float.h src/Camera.h /usr/include/GL/gl.h \
+ /usr/include/bits/stdlib-float.h src/Camera.hpp /usr/include/GL/gl.h \
  /usr/include/GL/glext.h /usr/include/inttypes.h \
  /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/wchar.h src/Quaternions.h \
- src/Maths.h /usr/include/c++/4.9.2/cmath \
+ /usr/include/stdint.h /usr/include/bits/wchar.h src/Quaternions.hpp \
+ src/Maths.hpp /usr/include/c++/4.9.2/cmath \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/os_defines.h \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/cpu_defines.h \
@@ -26,7 +26,7 @@ src/Camera.o: src/Camera.cpp /usr/include/stdc-predef.h \
  /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
  /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
  /usr/include/bits/mathcalls.h /usr/include/bits/mathinline.h \
- src/PhysicsMath.h src/Support.h /usr/include/stdio.h \
+ src/PhysicsMath.hpp src/Support.hpp /usr/include/stdio.h \
  /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stdarg.h \
  /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
@@ -91,7 +91,7 @@ src/Camera.o: src/Camera.cpp /usr/include/stdc-predef.h \
 
 /usr/include/bits/stdlib-float.h:
 
-src/Camera.h:
+src/Camera.hpp:
 
 /usr/include/GL/gl.h:
 
@@ -105,9 +105,9 @@ src/Camera.h:
 
 /usr/include/bits/wchar.h:
 
-src/Quaternions.h:
+src/Quaternions.hpp:
 
-src/Maths.h:
+src/Maths.hpp:
 
 /usr/include/c++/4.9.2/cmath:
 
@@ -139,9 +139,9 @@ src/Maths.h:
 
 /usr/include/bits/mathinline.h:
 
-src/PhysicsMath.h:
+src/PhysicsMath.hpp:
 
-src/Support.h:
+src/Support.hpp:
 
 /usr/include/stdio.h:
 

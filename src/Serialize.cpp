@@ -19,9 +19,9 @@
  */
 #include <unistd.h>
 
-#include "Models.h"
-#include "Quaternions.h"
-#include "Serialize.h"
+#include "Models.hpp"
+#include "Quaternions.hpp"
+#include "Serialize.hpp"
 
 /* these all read big-endian data */
 

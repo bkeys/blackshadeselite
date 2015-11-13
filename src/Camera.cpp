@@ -20,7 +20,7 @@
 
 #include <stdlib.h>
 
-#include "Camera.h"
+#include "Camera.hpp"
 
 void Camera::Apply()
 {

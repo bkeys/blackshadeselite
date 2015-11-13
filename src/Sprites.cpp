@@ -17,8 +17,8 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
  * USA
  */
-#include "Sprites.h"
-#include "Globals.h"
+#include "Sprites.hpp"
+#include "Globals.hpp"
 
 extern double multiplier;
 extern bool slomo;

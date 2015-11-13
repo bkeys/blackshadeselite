@@ -1,5 +1,5 @@
-src/Window.o: src/Window.cpp /usr/include/stdc-predef.h src/Window.h \
- src/Quaternions.h src/Maths.h /usr/include/c++/4.9.2/cmath \
+src/Window.o: src/Window.cpp /usr/include/stdc-predef.h src/Window.hpp \
+ src/Quaternions.hpp src/Maths.hpp /usr/include/c++/4.9.2/cmath \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/os_defines.h \
@@ -16,7 +16,7 @@ src/Window.o: src/Window.cpp /usr/include/stdc-predef.h src/Window.h \
  /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stddef.h \
  /usr/include/inttypes.h \
  /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/wchar.h src/PhysicsMath.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h src/PhysicsMath.hpp \
  /usr/include/GL/glu.h /usr/include/c++/4.9.2/string \
  /usr/include/c++/4.9.2/bits/stringfwd.h \
  /usr/include/c++/4.9.2/bits/memoryfwd.h \
@@ -93,7 +93,7 @@ src/Window.o: src/Window.cpp /usr/include/stdc-predef.h src/Window.h \
  /usr/include/c++/4.9.2/bits/stl_uninitialized.h \
  /usr/include/c++/4.9.2/bits/stl_vector.h \
  /usr/include/c++/4.9.2/bits/stl_bvector.h \
- /usr/include/c++/4.9.2/bits/vector.tcc src/Threads.h \
+ /usr/include/c++/4.9.2/bits/vector.tcc src/Threads.hpp \
  /usr/include/c++/4.9.2/memory /usr/include/c++/4.9.2/bits/stl_tempbuf.h \
  /usr/include/c++/4.9.2/bits/stl_raw_storage_iter.h \
  /usr/include/c++/4.9.2/typeinfo /usr/include/c++/4.9.2/ext/concurrence.h \
@@ -109,11 +109,11 @@ src/Window.o: src/Window.cpp /usr/include/stdc-predef.h src/Window.h \
 
 /usr/include/stdc-predef.h:
 
-src/Window.h:
+src/Window.hpp:
 
-src/Quaternions.h:
+src/Quaternions.hpp:
 
-src/Maths.h:
+src/Maths.hpp:
 
 /usr/include/c++/4.9.2/cmath:
 
@@ -169,7 +169,7 @@ src/Maths.h:
 
 /usr/include/bits/wchar.h:
 
-src/PhysicsMath.h:
+src/PhysicsMath.hpp:
 
 /usr/include/GL/glu.h:
 
@@ -379,7 +379,7 @@ src/PhysicsMath.h:
 
 /usr/include/c++/4.9.2/bits/vector.tcc:
 
-src/Threads.h:
+src/Threads.hpp:
 
 /usr/include/c++/4.9.2/memory:
 

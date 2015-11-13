@@ -24,11 +24,11 @@
 //
 // Model Maximums
 //
-#include "Quaternions.h"
+#include "Quaternions.hpp"
 #include <GL/gl.h>
 #include <GL/glu.h>
-#include "Files.h"
-#include "Constants.h"
+#include "Files.hpp"
+#include "Constants.hpp"
 
 #define max_textured_triangle		400     // maximum number of texture-filled triangles in a model
 #define max_model_vertex			max_textured_triangle*3 // maximum number of vertexs

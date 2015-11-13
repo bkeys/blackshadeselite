@@ -16,7 +16,7 @@ src/Frustum.o: src/Frustum.cpp /usr/include/stdc-predef.h \
  /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stddef.h \
  /usr/include/inttypes.h \
  /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/wchar.h src/Frustum.h
+ /usr/include/stdint.h /usr/include/bits/wchar.h src/Frustum.hpp
 
 /usr/include/stdc-predef.h:
 
@@ -74,4 +74,4 @@ src/Frustum.o: src/Frustum.cpp /usr/include/stdc-predef.h \
 
 /usr/include/bits/wchar.h:
 
-src/Frustum.h:
+src/Frustum.hpp:

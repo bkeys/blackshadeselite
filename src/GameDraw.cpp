@@ -18,9 +18,9 @@
  * USA
  */
 
-#include "Weapon.h"
-#include "TGALoader.h"
-#include "Game.h"
+#include "Weapon.hpp"
+#include "TGALoader.hpp"
+#include "Game.hpp"
 
 extern double multiplier;
 

@@ -17,13 +17,13 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
  * USA
  */
-#include "Globals.h"
-#include "Quaternions.h"
-#include "Constants.h"
-#include "Models.h"
-#include "Person.h"
-#include "Decals.h"
-#include "Font.h"
+#include "Globals.hpp"
+#include "Quaternions.hpp"
+#include "Constants.hpp"
+#include "Models.hpp"
+#include "Person.hpp"
+#include "Decals.hpp"
+#include "Font.hpp"
 
 float sinefluct;
 float sinefluctprog;

@@ -19,16 +19,16 @@
  */
 #pragma once
 
-#include "Quaternions.h"
+#include "Quaternions.hpp"
 ///ZWARNING
 ///#include <GL/glut.h>
 ///GLUT REMOVED.
-#include "Files.h"
-#include "TGALoader.h"
-#include "Quaternions.h"
-#include "Camera.h"
-#include "Models.h"
-#include "Fog.h"
+#include "Files.hpp"
+#include "TGALoader.hpp"
+#include "Quaternions.hpp"
+#include "Camera.hpp"
+#include "Models.hpp"
+#include "Fog.hpp"
 //
 // Model Structures
 //

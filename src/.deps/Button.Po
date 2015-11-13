@@ -1,4 +1,4 @@
-src/Button.o: src/Button.cpp /usr/include/stdc-predef.h src/Button.h \
+src/Button.o: src/Button.cpp /usr/include/stdc-predef.h src/Button.hpp \
  /usr/include/c++/4.9.2/string \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -80,12 +80,12 @@ src/Button.o: src/Button.cpp /usr/include/stdc-predef.h src/Button.h \
  /usr/include/c++/4.9.2/bits/hash_bytes.h \
  /usr/include/c++/4.9.2/bits/basic_string.tcc /usr/include/GL/gl.h \
  /usr/include/GL/glext.h /usr/include/inttypes.h /usr/include/GL/glu.h \
- src/Quaternions.h src/Maths.h /usr/include/c++/4.9.2/cmath \
+ src/Quaternions.hpp src/Maths.hpp /usr/include/c++/4.9.2/cmath \
  /usr/include/math.h /usr/include/bits/huge_val.h \
  /usr/include/bits/huge_valf.h /usr/include/bits/huge_vall.h \
  /usr/include/bits/inf.h /usr/include/bits/nan.h \
  /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h \
- /usr/include/bits/mathinline.h src/PhysicsMath.h src/Window.h \
+ /usr/include/bits/mathinline.h src/PhysicsMath.hpp src/Window.hpp \
  /usr/include/c++/4.9.2/vector \
  /usr/include/c++/4.9.2/bits/stl_construct.h \
  /usr/include/c++/4.9.2/ext/alloc_traits.h \
@@ -93,7 +93,7 @@ src/Button.o: src/Button.cpp /usr/include/stdc-predef.h src/Button.h \
  /usr/include/c++/4.9.2/bits/stl_uninitialized.h \
  /usr/include/c++/4.9.2/bits/stl_vector.h \
  /usr/include/c++/4.9.2/bits/stl_bvector.h \
- /usr/include/c++/4.9.2/bits/vector.tcc src/Threads.h \
+ /usr/include/c++/4.9.2/bits/vector.tcc src/Threads.hpp \
  /usr/include/c++/4.9.2/memory /usr/include/c++/4.9.2/bits/stl_tempbuf.h \
  /usr/include/c++/4.9.2/bits/stl_raw_storage_iter.h \
  /usr/include/c++/4.9.2/typeinfo /usr/include/c++/4.9.2/ext/concurrence.h \
@@ -109,7 +109,7 @@ src/Button.o: src/Button.cpp /usr/include/stdc-predef.h src/Button.h \
 
 /usr/include/stdc-predef.h:
 
-src/Button.h:
+src/Button.hpp:
 
 /usr/include/c++/4.9.2/string:
 
@@ -337,9 +337,9 @@ src/Button.h:
 
 /usr/include/GL/glu.h:
 
-src/Quaternions.h:
+src/Quaternions.hpp:
 
-src/Maths.h:
+src/Maths.hpp:
 
 /usr/include/c++/4.9.2/cmath:
 
@@ -361,9 +361,9 @@ src/Maths.h:
 
 /usr/include/bits/mathinline.h:
 
-src/PhysicsMath.h:
+src/PhysicsMath.hpp:
 
-src/Window.h:
+src/Window.hpp:
 
 /usr/include/c++/4.9.2/vector:
 
@@ -381,7 +381,7 @@ src/Window.h:
 
 /usr/include/c++/4.9.2/bits/vector.tcc:
 
-src/Threads.h:
+src/Threads.hpp:
 
 /usr/include/c++/4.9.2/memory:
 

@@ -18,7 +18,7 @@
  * USA
  */
 /**> HEADER FILES <**/
-#include "Maths.h"
+#include "Maths.hpp"
 
 //FIXME: Don't use this anymore...
 double fast_sqrt(register double arg)

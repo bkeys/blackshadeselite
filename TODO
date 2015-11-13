@@ -1,11 +1,16 @@
-Go on line 1896 in GameInitDispose.cpp and figure out the line right before the puts statement. It is seg faulting.
+>remove files that are not currently needed
+>make the compiler as strict as possible
 
+>spruce up the main menu to make it actually functional
+>create a functional GUI
+"This may require the entire GUI to be replacd with something better"
 
+>begin work on server/client
 
 Implement SDL_image for pngs
 CLI Options
 Keyboard config shit
-toggling third person
+
 AI Fix
 What Ryan said about it:
 "I don't have the source in front of me, but it looks like the people walk

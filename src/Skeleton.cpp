@@ -18,8 +18,8 @@
  * USA
  */
 /**> HEADER FILES <**/
-#include "Skeleton.h"
-#include "Serialize.h"
+#include "Skeleton.hpp"
+#include "Serialize.hpp"
 
 extern double multiplier;
 extern unsigned int gSourceID[100];

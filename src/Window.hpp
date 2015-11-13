@@ -19,14 +19,14 @@
  */
 #pragma once
 
-#include "Quaternions.h"
+#include "Quaternions.hpp"
 #include <GL/gl.h>
 #include <GL/glu.h>
 
 #include <string>
 #include <vector>
 
-#include "Threads.h"
+#include "Threads.hpp"
 
 class Window {
 public:

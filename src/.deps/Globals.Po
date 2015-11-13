@@ -1,12 +1,12 @@
-src/Globals.o: src/Globals.cpp /usr/include/stdc-predef.h src/Globals.h \
- src/Colors.h /usr/include/GL/gl.h /usr/include/GL/glext.h \
+src/Globals.o: src/Globals.cpp /usr/include/stdc-predef.h src/Globals.hpp \
+ src/Colors.hpp /usr/include/GL/gl.h /usr/include/GL/glext.h \
  /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stddef.h \
  /usr/include/inttypes.h /usr/include/features.h /usr/include/sys/cdefs.h \
  /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
  /usr/include/gnu/stubs-64.h \
  /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/wchar.h src/Config.h \
- src/Quaternions.h src/Maths.h /usr/include/c++/4.9.2/cmath \
+ /usr/include/stdint.h /usr/include/bits/wchar.h src/Config.hpp \
+ src/Quaternions.hpp src/Maths.hpp /usr/include/c++/4.9.2/cmath \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/os_defines.h \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/cpu_defines.h \
@@ -16,10 +16,10 @@ src/Globals.o: src/Globals.cpp /usr/include/stdc-predef.h src/Globals.h \
  /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
  /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
  /usr/include/bits/mathcalls.h /usr/include/bits/mathinline.h \
- src/PhysicsMath.h src/Constants.h src/Models.h /usr/include/GL/glu.h \
- src/Files.h /usr/include/stdio.h /usr/include/bits/types.h \
- /usr/include/bits/typesizes.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/wchar.h \
+ src/PhysicsMath.hpp src/Constants.hpp src/Models.hpp \
+ /usr/include/GL/glu.h src/Files.hpp /usr/include/stdio.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stdarg.h \
  /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
  /usr/include/bits/stdio.h /usr/include/stdlib.h \
@@ -104,19 +104,19 @@ src/Globals.o: src/Globals.cpp /usr/include/stdc-predef.h src/Globals.h \
  /usr/include/c++/4.9.2/bits/codecvt.h \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/basic_file.h \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/c++io.h \
- /usr/include/c++/4.9.2/bits/fstream.tcc src/MacInput.h src/Support.h \
+ /usr/include/c++/4.9.2/bits/fstream.tcc src/MacInput.hpp src/Support.hpp \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/environments.h /usr/include/bits/confname.h \
  /usr/include/getopt.h /usr/include/AL/al.h /usr/include/AL/alut.h \
- /usr/include/AL/alc.h src/Person.h src/Skeleton.h src/Camera.h \
- src/Sprites.h src/TGALoader.h src/Fog.h src/Weapon.h src/Decals.h \
- src/Font.h
+ /usr/include/AL/alc.h src/Person.hpp src/Skeleton.hpp src/Camera.hpp \
+ src/Sprites.hpp src/TGALoader.hpp src/Fog.hpp src/Weapon.hpp \
+ src/Decals.hpp src/Font.hpp
 
 /usr/include/stdc-predef.h:
 
-src/Globals.h:
+src/Globals.hpp:
 
-src/Colors.h:
+src/Colors.hpp:
 
 /usr/include/GL/gl.h:
 
@@ -142,11 +142,11 @@ src/Colors.h:
 
 /usr/include/bits/wchar.h:
 
-src/Config.h:
+src/Config.hpp:
 
-src/Quaternions.h:
+src/Quaternions.hpp:
 
-src/Maths.h:
+src/Maths.hpp:
 
 /usr/include/c++/4.9.2/cmath:
 
@@ -178,15 +178,15 @@ src/Maths.h:
 
 /usr/include/bits/mathinline.h:
 
-src/PhysicsMath.h:
+src/PhysicsMath.hpp:
 
-src/Constants.h:
+src/Constants.hpp:
 
-src/Models.h:
+src/Models.hpp:
 
 /usr/include/GL/glu.h:
 
-src/Files.h:
+src/Files.hpp:
 
 /usr/include/stdio.h:
 
@@ -432,9 +432,9 @@ src/Files.h:
 
 /usr/include/c++/4.9.2/bits/fstream.tcc:
 
-src/MacInput.h:
+src/MacInput.hpp:
 
-src/Support.h:
+src/Support.hpp:
 
 /usr/include/unistd.h:
 
@@ -452,20 +452,20 @@ src/Support.h:
 
 /usr/include/AL/alc.h:
 
-src/Person.h:
+src/Person.hpp:
 
-src/Skeleton.h:
+src/Skeleton.hpp:
 
-src/Camera.h:
+src/Camera.hpp:
 
-src/Sprites.h:
+src/Sprites.hpp:
 
-src/TGALoader.h:
+src/TGALoader.hpp:
 
-src/Fog.h:
+src/Fog.hpp:
 
-src/Weapon.h:
+src/Weapon.hpp:
 
-src/Decals.h:
+src/Decals.hpp:
 
-src/Font.h:
+src/Font.hpp:

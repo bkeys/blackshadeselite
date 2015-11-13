@@ -20,7 +20,7 @@
 #include <cmath>
 #include <GL/gl.h>
 
-#include "Frustum.h"
+#include "Frustum.hpp"
 
 void FRUSTUM::GetFrustum()
 {

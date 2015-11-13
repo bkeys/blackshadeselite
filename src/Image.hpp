@@ -1,5 +1,5 @@
 /*
- * Label.h
+ * Image.h
  * Copyright (C) 2007 by Bryan Duff <duff0097@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -17,40 +17,43 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
  * USA
  */
-#ifndef _GUI_LABEL_H_
-#define _GUI_LABEL_H_
+#ifndef _GUI_IMAGE_H_
+#define _GUI_IMAGE_H_
 
-#include "Quaternions.h"
+#include "Quaternions.hpp"
 #include <GL/gl.h>
 #include <GL/glu.h>
 
 #include <string>
 
-#include "Window.h"
-#include "Colors.h"
+#include "Window.hpp"
+#include "Colors.hpp"
 
-class Label:public Window {
+#define NUM_TEXTURES 2
+
+class Image:public Window {
 public:
-  Label();
-  ~Label() {
-    text.clear();
-  };
-  void setLabel(float xpos, float ypos, float size);
-  void setFont(int set, GLuint _base, GLuint _texture);
-  void setText(const char *text);
+  Image();
+  ~Image() {
+  } void setDim(float _xpos, float _ypos, float _xwidth, float _yheight);
+  void setImage(GLuint _texture, unsigned int index);
+  void setActive(unsigned int index);
   void setColor(Color _color);
+  void update(float _sinefluct, float _sinefluctprog);
+#if 0
+  void glScale(float x, float y);
+  void glTranslate(float x, float y);
+  void glRotate(float deg, float x, float y, float z);
+  void glColor(float r, float g, float b, float a);
+#endif
   void draw();
 
 private:
-  GLfloat xpos, ypos;
-  float size;
-  string text;
+  GLfloat xpos, ypos, xwidth, yheight;
+  unsigned int index;
+  GLuint texture[NUM_TEXTURES];
+  float sinefluct, sinefluctprog;
   Color color;
-
-  //Font stuff
-  int fontSet;
-  GLuint texture;
-  GLuint base;
 };
 
 #endif

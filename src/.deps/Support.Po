@@ -41,8 +41,8 @@ src/Support.o: src/Support.cpp /usr/include/stdc-predef.h \
  /usr/include/SDL/SDL_video.h /usr/include/SDL/SDL_joystick.h \
  /usr/include/SDL/SDL_quit.h /usr/include/SDL/SDL_loadso.h \
  /usr/include/SDL/SDL_timer.h /usr/include/SDL/SDL_version.h \
- src/Support.h /usr/include/AL/al.h /usr/include/AL/alut.h \
- /usr/include/AL/alc.h src/Files.h /usr/include/c++/4.9.2/cstdarg \
+ src/Support.hpp /usr/include/AL/al.h /usr/include/AL/alut.h \
+ /usr/include/AL/alc.h src/Files.hpp /usr/include/c++/4.9.2/cstdarg \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/os_defines.h \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/cpu_defines.h \
@@ -125,8 +125,8 @@ src/Support.o: src/Support.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/basic_file.h \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/c++io.h \
  /usr/include/c++/4.9.2/bits/fstream.tcc /usr/include/GL/gl.h \
- /usr/include/GL/glext.h /usr/include/GL/glu.h src/MacInput.h \
- src/Config.h /usr/include/vorbis/vorbisfile.h \
+ /usr/include/GL/glext.h /usr/include/GL/glu.h src/MacInput.hpp \
+ src/Config.hpp /usr/include/vorbis/vorbisfile.h \
  /usr/include/vorbis/codec.h /usr/include/ogg/ogg.h \
  /usr/include/ogg/os_types.h /usr/include/ogg/config_types.h
 
@@ -304,7 +304,7 @@ src/Support.o: src/Support.cpp /usr/include/stdc-predef.h \
 
 /usr/include/SDL/SDL_version.h:
 
-src/Support.h:
+src/Support.hpp:
 
 /usr/include/AL/al.h:
 
@@ -312,7 +312,7 @@ src/Support.h:
 
 /usr/include/AL/alc.h:
 
-src/Files.h:
+src/Files.hpp:
 
 /usr/include/c++/4.9.2/cstdarg:
 
@@ -532,9 +532,9 @@ src/Files.h:
 
 /usr/include/GL/glu.h:
 
-src/MacInput.h:
+src/MacInput.hpp:
 
-src/Config.h:
+src/Config.hpp:
 
 /usr/include/vorbis/vorbisfile.h:
 

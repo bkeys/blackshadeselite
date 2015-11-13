@@ -1,5 +1,5 @@
 /*
- * Globals.h
+ * Font.h
  * Copyright (C) 2007 by Bryan Duff <duff0097@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -17,46 +17,24 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
  * USA
  */
-#ifndef _GLOBALS_H_
-#define _GLOBALS_H_
+#pragma once
 
-#include "Colors.h"
-#include "Config.h"
+#include "Quaternions.hpp"
+#include <GL/gl.h>
+#include <GL/glu.h>
+#include "Files.hpp"
+#include "Quaternions.hpp"
+#include "TGALoader.hpp"
 
-#define RAD2DEG 		56.54866776;
-
-enum game_state {
-  INIT = 0,
-  MAINMENU,
-  GAME,
-  HELP
-};
-
-///simple container classes, here for now
-class Environment {
+class Font {
 public:
-  float precipitationhorz;
-  float precipitationvert;
-  float precipitationdensity;
-  float snowdelay;
+  GLuint FontTexture;
+  GLuint base;
 
-  float viewdistance;
+  void LoadFontTexture(const char *fileName);
+  void BuildFont();
 
-  int type;                     //environment
-
-  Color fogcolor;
+   ~Font() {
+    glDeleteTextures(1, (const GLuint *)&FontTexture);
+  };
 };
-
-class Mission
-{
-public:
-  int enemytype;
-  int num;
-  int numpossibleguns;
-  int evilprobability;
-  int timeremaining;
-  float difficulty;
-  void setMission(int num, int enemytype, int timeremaining, int difficulty);
-};
-
-#endif

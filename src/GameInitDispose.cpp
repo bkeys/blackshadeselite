@@ -20,8 +20,8 @@
 #include <ctype.h>
 #include <time.h>
 
-#include "Weapon.h"
-#include "Game.h"
+#include "Weapon.hpp"
+#include "Game.hpp"
 
 extern unsigned int gSourceID[100];
 
@@ -1782,7 +1782,7 @@ void Game::InitGame() {
     animation[assaultrifleaimanim].
         Load((char *)"Data/Animations/AssaultRifleaim");
 
-    animation[crouchanim].Load((char *)"Data/Animations/Crouch");
+    animation[crouchanim].Load((char *)"Data/Animations/Crou.hpp");
 
     loadingscreenamount += 5;
 
@@ -1812,7 +1812,7 @@ void Game::InitGame() {
       LoadingScreen(loadingscreenamount / loadingscreenamounttotal * 100);
 
     animation[grenadethrowanim].Load((char *)"Data/Animations/grenadethrow");
-    animation[zombieeatanim].Load((char *)"Data/Animations/Zombiemunch");
+    animation[zombieeatanim].Load((char *)"Data/Animations/Zombiemun.hpp");
     animation[zombiejoganim].Load((char *)"Data/Animations/ZombieRun");
     animation[zombiewalkanim].Load((char *)"Data/Animations/Zombiewalk");
 
@@ -2170,7 +2170,7 @@ void Game::InitGUI()
   help_screen->attach(label);
 
   label = new Label();
-  label->setName("crouch");
+  label->setName("crou.hpp");
   label->setFont(1, font.base, font.FontTexture);
   label->setLabel(0.02, 1.04, 0.8);
   label->setColor(Color(0.5, 0.5, 0.5, 1.0));

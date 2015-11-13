@@ -18,7 +18,7 @@
  * USA
  */
 /**> HEADER FILES <**/
-#include "Text.h"
+#include "Text.hpp"
 
 void Text::LoadFontTexture(const char *fileName) {
 

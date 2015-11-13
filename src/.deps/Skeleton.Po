@@ -1,13 +1,13 @@
 src/Skeleton.o: src/Skeleton.cpp /usr/include/stdc-predef.h \
- src/Skeleton.h /usr/include/GL/gl.h /usr/include/GL/glext.h \
+ src/Skeleton.hpp /usr/include/GL/gl.h /usr/include/GL/glext.h \
  /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stddef.h \
  /usr/include/inttypes.h /usr/include/features.h /usr/include/sys/cdefs.h \
  /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
  /usr/include/gnu/stubs-64.h \
  /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/wchar.h /usr/include/AL/al.h \
- /usr/include/AL/alut.h /usr/include/AL/alc.h src/Quaternions.h \
- src/Maths.h /usr/include/c++/4.9.2/cmath \
+ /usr/include/AL/alut.h /usr/include/AL/alc.h src/Quaternions.hpp \
+ src/Maths.hpp /usr/include/c++/4.9.2/cmath \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/os_defines.h \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/cpu_defines.h \
@@ -17,7 +17,7 @@ src/Skeleton.o: src/Skeleton.cpp /usr/include/stdc-predef.h \
  /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
  /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
  /usr/include/bits/mathcalls.h /usr/include/bits/mathinline.h \
- src/PhysicsMath.h src/Constants.h src/Files.h /usr/include/stdio.h \
+ src/PhysicsMath.hpp src/Constants.hpp src/Files.hpp /usr/include/stdio.h \
  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
  /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stdarg.h \
@@ -105,14 +105,15 @@ src/Skeleton.o: src/Skeleton.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/basic_file.h \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/c++io.h \
  /usr/include/c++/4.9.2/bits/fstream.tcc /usr/include/GL/glu.h \
- src/MacInput.h src/Support.h /usr/include/unistd.h \
+ src/MacInput.hpp src/Support.hpp /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
- /usr/include/bits/confname.h /usr/include/getopt.h src/Models.h \
- src/Camera.h src/Globals.h src/Colors.h src/Config.h src/Serialize.h
+ /usr/include/bits/confname.h /usr/include/getopt.h src/Models.hpp \
+ src/Camera.hpp src/Globals.hpp src/Colors.hpp src/Config.hpp \
+ src/Serialize.hpp
 
 /usr/include/stdc-predef.h:
 
-src/Skeleton.h:
+src/Skeleton.hpp:
 
 /usr/include/GL/gl.h:
 
@@ -144,9 +145,9 @@ src/Skeleton.h:
 
 /usr/include/AL/alc.h:
 
-src/Quaternions.h:
+src/Quaternions.hpp:
 
-src/Maths.h:
+src/Maths.hpp:
 
 /usr/include/c++/4.9.2/cmath:
 
@@ -178,11 +179,11 @@ src/Maths.h:
 
 /usr/include/bits/mathinline.h:
 
-src/PhysicsMath.h:
+src/PhysicsMath.hpp:
 
-src/Constants.h:
+src/Constants.hpp:
 
-src/Files.h:
+src/Files.hpp:
 
 /usr/include/stdio.h:
 
@@ -430,9 +431,9 @@ src/Files.h:
 
 /usr/include/GL/glu.h:
 
-src/MacInput.h:
+src/MacInput.hpp:
 
-src/Support.h:
+src/Support.hpp:
 
 /usr/include/unistd.h:
 
@@ -444,14 +445,14 @@ src/Support.h:
 
 /usr/include/getopt.h:
 
-src/Models.h:
+src/Models.hpp:
 
-src/Camera.h:
+src/Camera.hpp:
 
-src/Globals.h:
+src/Globals.hpp:
 
-src/Colors.h:
+src/Colors.hpp:
 
-src/Config.h:
+src/Config.hpp:
 
-src/Serialize.h:
+src/Serialize.hpp:

@@ -18,7 +18,7 @@
  * USA
  */
 
-#include "Game.h"
+#include "Game.hpp"
 
 Game &Game::getInstance()
 {

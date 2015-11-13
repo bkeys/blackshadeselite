@@ -1,5 +1,5 @@
 src/Quaternions.o: src/Quaternions.cpp /usr/include/stdc-predef.h \
- src/Quaternions.h src/Maths.h /usr/include/c++/4.9.2/cmath \
+ src/Quaternions.hpp src/Maths.hpp /usr/include/c++/4.9.2/cmath \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/os_defines.h \
@@ -16,13 +16,13 @@ src/Quaternions.o: src/Quaternions.cpp /usr/include/stdc-predef.h \
  /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stddef.h \
  /usr/include/inttypes.h \
  /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/wchar.h src/PhysicsMath.h
+ /usr/include/stdint.h /usr/include/bits/wchar.h src/PhysicsMath.hpp
 
 /usr/include/stdc-predef.h:
 
-src/Quaternions.h:
+src/Quaternions.hpp:
 
-src/Maths.h:
+src/Maths.hpp:
 
 /usr/include/c++/4.9.2/cmath:
 
@@ -78,4 +78,4 @@ src/Maths.h:
 
 /usr/include/bits/wchar.h:
 
-src/PhysicsMath.h:
+src/PhysicsMath.hpp:

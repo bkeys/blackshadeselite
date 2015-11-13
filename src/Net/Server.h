@@ -1,4 +1,4 @@
-#include "NetCommon.h"
+#include "NetCommon.hpp"
 
 class Server : NetCommon
 {

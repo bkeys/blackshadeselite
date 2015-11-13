@@ -18,7 +18,7 @@
  * USA
  */
 /**> HEADER FILES <**/
-#include "Fog.h"
+#include "Fog.hpp"
 void Fog::SetFog(float colorR, float colorG, float colorB, float fStart,
                  float fEnd, float Density)
 {

@@ -17,8 +17,8 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
  * USA
  */
-#include "Label.h"
-#include "Config.h"
+#include "Label.hpp"
+#include "Config.hpp"
 
 extern Config config;
 

@@ -1,4 +1,4 @@
-src/Person.o: src/Person.cpp /usr/include/stdc-predef.h src/Person.h \
+src/Person.o: src/Person.cpp /usr/include/stdc-predef.h src/Person.hpp \
  /usr/include/c++/4.9.2/cmath \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -17,9 +17,9 @@ src/Person.o: src/Person.cpp /usr/include/stdc-predef.h src/Person.h \
  /usr/include/inttypes.h \
  /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/wchar.h /usr/include/AL/al.h \
- /usr/include/AL/alut.h /usr/include/AL/alc.h src/Quaternions.h \
- src/Maths.h src/PhysicsMath.h src/Constants.h src/Skeleton.h src/Files.h \
- /usr/include/stdio.h /usr/include/bits/types.h \
+ /usr/include/AL/alut.h /usr/include/AL/alc.h src/Quaternions.hpp \
+ src/Maths.hpp src/PhysicsMath.hpp src/Constants.hpp src/Skeleton.hpp \
+ src/Files.hpp /usr/include/stdio.h /usr/include/bits/types.h \
  /usr/include/bits/typesizes.h /usr/include/libio.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stdarg.h \
@@ -107,27 +107,28 @@ src/Person.o: src/Person.cpp /usr/include/stdc-predef.h src/Person.h \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/basic_file.h \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/c++io.h \
  /usr/include/c++/4.9.2/bits/fstream.tcc /usr/include/GL/glu.h \
- src/MacInput.h src/Support.h /usr/include/unistd.h \
+ src/MacInput.hpp src/Support.hpp /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
- /usr/include/bits/confname.h /usr/include/getopt.h src/Models.h \
- src/Camera.h src/Globals.h src/Colors.h src/Config.h src/Sprites.h \
- src/TGALoader.h src/Fog.h src/Weapon.h src/Game.h src/SDL_funcs.h \
- /usr/include/SDL/SDL.h /usr/include/SDL/SDL_main.h \
- /usr/include/SDL/SDL_stdinc.h /usr/include/SDL/SDL_config.h \
- /usr/include/SDL/SDL_config-x86_64.h /usr/include/SDL/SDL_platform.h \
- /usr/include/strings.h /usr/include/iconv.h \
- /usr/include/SDL/begin_code.h /usr/include/SDL/close_code.h \
- /usr/include/SDL/SDL_audio.h /usr/include/SDL/SDL_error.h \
- /usr/include/SDL/SDL_endian.h /usr/include/SDL/SDL_mutex.h \
- /usr/include/SDL/SDL_thread.h /usr/include/SDL/SDL_rwops.h \
- /usr/include/SDL/SDL_cdrom.h /usr/include/SDL/SDL_cpuinfo.h \
- /usr/include/SDL/SDL_events.h /usr/include/SDL/SDL_active.h \
- /usr/include/SDL/SDL_keyboard.h /usr/include/SDL/SDL_keysym.h \
- /usr/include/SDL/SDL_mouse.h /usr/include/SDL/SDL_video.h \
- /usr/include/SDL/SDL_joystick.h /usr/include/SDL/SDL_quit.h \
- /usr/include/SDL/SDL_loadso.h /usr/include/SDL/SDL_timer.h \
- /usr/include/SDL/SDL_version.h src/Text.h src/Font.h src/Frustum.h \
- src/Decals.h src/Threads.h /usr/include/c++/4.9.2/memory \
+ /usr/include/bits/confname.h /usr/include/getopt.h src/Models.hpp \
+ src/Camera.hpp src/Globals.hpp src/Colors.hpp src/Config.hpp \
+ src/Sprites.hpp src/TGALoader.hpp src/Fog.hpp src/Weapon.hpp \
+ src/Game.hpp src/SDL_funcs.hpp /usr/include/SDL/SDL.h \
+ /usr/include/SDL/SDL_main.h /usr/include/SDL/SDL_stdinc.h \
+ /usr/include/SDL/SDL_config.h /usr/include/SDL/SDL_config-x86_64.h \
+ /usr/include/SDL/SDL_platform.h /usr/include/strings.h \
+ /usr/include/iconv.h /usr/include/SDL/begin_code.h \
+ /usr/include/SDL/close_code.h /usr/include/SDL/SDL_audio.h \
+ /usr/include/SDL/SDL_error.h /usr/include/SDL/SDL_endian.h \
+ /usr/include/SDL/SDL_mutex.h /usr/include/SDL/SDL_thread.h \
+ /usr/include/SDL/SDL_rwops.h /usr/include/SDL/SDL_cdrom.h \
+ /usr/include/SDL/SDL_cpuinfo.h /usr/include/SDL/SDL_events.h \
+ /usr/include/SDL/SDL_active.h /usr/include/SDL/SDL_keyboard.h \
+ /usr/include/SDL/SDL_keysym.h /usr/include/SDL/SDL_mouse.h \
+ /usr/include/SDL/SDL_video.h /usr/include/SDL/SDL_joystick.h \
+ /usr/include/SDL/SDL_quit.h /usr/include/SDL/SDL_loadso.h \
+ /usr/include/SDL/SDL_timer.h /usr/include/SDL/SDL_version.h src/Text.hpp \
+ src/Font.hpp src/Frustum.hpp src/Decals.hpp src/Threads.hpp \
+ /usr/include/c++/4.9.2/memory \
  /usr/include/c++/4.9.2/bits/stl_construct.h \
  /usr/include/c++/4.9.2/ext/alloc_traits.h \
  /usr/include/c++/4.9.2/bits/alloc_traits.h \
@@ -143,15 +144,15 @@ src/Person.o: src/Person.cpp /usr/include/stdc-predef.h src/Person.h \
  /usr/include/c++/4.9.2/bits/shared_ptr.h \
  /usr/include/c++/4.9.2/bits/shared_ptr_base.h \
  /usr/include/c++/4.9.2/ext/aligned_buffer.h \
- /usr/include/c++/4.9.2/backward/auto_ptr.h src/Window.h \
+ /usr/include/c++/4.9.2/backward/auto_ptr.h src/Window.hpp \
  /usr/include/c++/4.9.2/vector /usr/include/c++/4.9.2/bits/stl_vector.h \
  /usr/include/c++/4.9.2/bits/stl_bvector.h \
- /usr/include/c++/4.9.2/bits/vector.tcc src/Label.h src/Image.h \
- src/Button.h
+ /usr/include/c++/4.9.2/bits/vector.tcc src/Label.hpp src/Image.hpp \
+ src/Button.hpp
 
 /usr/include/stdc-predef.h:
 
-src/Person.h:
+src/Person.hpp:
 
 /usr/include/c++/4.9.2/cmath:
 
@@ -213,17 +214,17 @@ src/Person.h:
 
 /usr/include/AL/alc.h:
 
-src/Quaternions.h:
+src/Quaternions.hpp:
 
-src/Maths.h:
+src/Maths.hpp:
 
-src/PhysicsMath.h:
+src/PhysicsMath.hpp:
 
-src/Constants.h:
+src/Constants.hpp:
 
-src/Skeleton.h:
+src/Skeleton.hpp:
 
-src/Files.h:
+src/Files.hpp:
 
 /usr/include/stdio.h:
 
@@ -471,9 +472,9 @@ src/Files.h:
 
 /usr/include/GL/glu.h:
 
-src/MacInput.h:
+src/MacInput.hpp:
 
-src/Support.h:
+src/Support.hpp:
 
 /usr/include/unistd.h:
 
@@ -485,27 +486,27 @@ src/Support.h:
 
 /usr/include/getopt.h:
 
-src/Models.h:
+src/Models.hpp:
 
-src/Camera.h:
+src/Camera.hpp:
 
-src/Globals.h:
+src/Globals.hpp:
 
-src/Colors.h:
+src/Colors.hpp:
 
-src/Config.h:
+src/Config.hpp:
 
-src/Sprites.h:
+src/Sprites.hpp:
 
-src/TGALoader.h:
+src/TGALoader.hpp:
 
-src/Fog.h:
+src/Fog.hpp:
 
-src/Weapon.h:
+src/Weapon.hpp:
 
-src/Game.h:
+src/Game.hpp:
 
-src/SDL_funcs.h:
+src/SDL_funcs.hpp:
 
 /usr/include/SDL/SDL.h:
 
@@ -565,15 +566,15 @@ src/SDL_funcs.h:
 
 /usr/include/SDL/SDL_version.h:
 
-src/Text.h:
+src/Text.hpp:
 
-src/Font.h:
+src/Font.hpp:
 
-src/Frustum.h:
+src/Frustum.hpp:
 
-src/Decals.h:
+src/Decals.hpp:
 
-src/Threads.h:
+src/Threads.hpp:
 
 /usr/include/c++/4.9.2/memory:
 
@@ -617,7 +618,7 @@ src/Threads.h:
 
 /usr/include/c++/4.9.2/backward/auto_ptr.h:
 
-src/Window.h:
+src/Window.hpp:
 
 /usr/include/c++/4.9.2/vector:
 
@@ -627,8 +628,8 @@ src/Window.h:
 
 /usr/include/c++/4.9.2/bits/vector.tcc:
 
-src/Label.h:
+src/Label.hpp:
 
-src/Image.h:
+src/Image.hpp:
 
-src/Button.h:
+src/Button.hpp:

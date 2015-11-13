@@ -98,7 +98,7 @@ src/Config.o: src/Config.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/basic_file.h \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/c++io.h \
  /usr/include/c++/4.9.2/bits/fstream.tcc /usr/include/c++/4.9.2/iostream \
- src/Config.h
+ src/Config.hpp
 
 /usr/include/stdc-predef.h:
 
@@ -370,4 +370,4 @@ src/Config.o: src/Config.cpp /usr/include/stdc-predef.h \
 
 /usr/include/c++/4.9.2/iostream:
 
-src/Config.h:
+src/Config.hpp:

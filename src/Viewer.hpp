@@ -27,25 +27,25 @@
 #include <ctype.h>
 #include <cstdarg>
 
-#include "SDL_funcs.h"
-#include "MacInput.h"
-#include "Quaternions.h"
-#include "Camera.h"
-#include "Skeleton.h"
-#include "Files.h"
-#include "Models.h"
-#include "TGALoader.h"
-#include "Fog.h"
-#include "Font.h"
-#include "Frustum.h"
-#include "Sprites.h"
-#include "Person.h"
-#include "Decals.h"
+#include "SDL_funcs.hpp"
+#include "MacInput.hpp"
+#include "Quaternions.hpp"
+#include "Camera.hpp"
+#include "Skeleton.hpp"
+#include "Files.hpp"
+#include "Models.hpp"
+#include "TGALoader.hpp"
+#include "Fog.hpp"
+#include "Font.hpp"
+#include "Frustum.hpp"
+#include "Sprites.hpp"
+#include "Person.hpp"
+#include "Decals.hpp"
 
-#include "Threads.h"
-#include "Window.h"
-#include "Label.h"
-#include "Image.h"
+#include "Threads.hpp"
+#include "Window.hpp"
+#include "Label.hpp"
+#include "Image.hpp"
 
 class Viewer {
 public:

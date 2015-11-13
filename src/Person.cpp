@@ -18,8 +18,8 @@
  * USA
  */
 
-#include "Person.h"
-#include "Game.h" //for Throw()
+#include "Person.hpp"
+#include "Game.hpp" //for Throw()
 
 extern double multiplier;
 extern unsigned int gSourceID[100];

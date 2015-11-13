@@ -20,7 +20,7 @@
 #include <fstream>
 #include <iostream>
 
-#include "Config.h"
+#include "Config.hpp"
 
 Config::Config()
 {

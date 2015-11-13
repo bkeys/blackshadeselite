@@ -18,7 +18,7 @@
  * USA
  */
 
-#include "Weapon.h"
+#include "Weapon.hpp"
 
 void Weapon::FindRotationGun(XYZ start, XYZ target)
 {

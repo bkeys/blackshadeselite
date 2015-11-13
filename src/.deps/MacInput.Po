@@ -1,5 +1,5 @@
 src/MacInput.o: src/MacInput.cpp /usr/include/stdc-predef.h \
- src/MacInput.h /usr/include/stdlib.h /usr/include/features.h \
+ src/MacInput.hpp /usr/include/stdlib.h /usr/include/features.h \
  /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
  /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stddef.h \
@@ -16,14 +16,14 @@ src/MacInput.o: src/MacInput.cpp /usr/include/stdc-predef.h \
  /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stdarg.h \
  /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
- /usr/include/bits/stdio.h src/Support.h /usr/include/unistd.h \
+ /usr/include/bits/stdio.h src/Support.hpp /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
  /usr/include/bits/confname.h /usr/include/getopt.h /usr/include/AL/al.h \
  /usr/include/AL/alut.h /usr/include/AL/alc.h
 
 /usr/include/stdc-predef.h:
 
-src/MacInput.h:
+src/MacInput.hpp:
 
 /usr/include/stdlib.h:
 
@@ -95,7 +95,7 @@ src/MacInput.h:
 
 /usr/include/bits/stdio.h:
 
-src/Support.h:
+src/Support.hpp:
 
 /usr/include/unistd.h:
 

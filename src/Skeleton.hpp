@@ -23,12 +23,12 @@
 #include <GL/gl.h>
 #include <AL/al.h>
 #include <AL/alut.h>
-#include "Quaternions.h"
-#include "Constants.h"
-#include "Files.h"
-#include "Models.h"
-#include "Camera.h"
-#include "Globals.h"
+#include "Quaternions.hpp"
+#include "Constants.hpp"
+#include "Files.hpp"
+#include "Models.hpp"
+#include "Camera.hpp"
+#include "Globals.hpp"
 
 #define boneconnect 0
 #define constraint 1

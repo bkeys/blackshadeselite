@@ -60,10 +60,10 @@ am__make_running_with_option = \
   test $$has_opt = yes
 am__make_dryrun = (target_option=n; $(am__make_running_with_option))
 am__make_keepgoing = (target_option=k; $(am__make_running_with_option))
-pkgdatadir = $(datadir)/buster
-pkgincludedir = $(includedir)/buster
-pkglibdir = $(libdir)/buster
-pkglibexecdir = $(libexecdir)/buster
+pkgdatadir = $(datadir)/bustershades
+pkgincludedir = $(includedir)/bustershades
+pkglibdir = $(libdir)/bustershades
+pkglibexecdir = $(libexecdir)/bustershades
 am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
 install_sh_DATA = $(install_sh) -c -m 644
 install_sh_PROGRAM = $(install_sh) -c
@@ -76,7 +76,7 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-bin_PROGRAMS = black$(EXEEXT)
+bin_PROGRAMS = blackshades$(EXEEXT)
 subdir = .
 DIST_COMMON = INSTALL NEWS README AUTHORS ChangeLog \
 	$(srcdir)/Makefile.in $(srcdir)/Makefile.am \
@@ -100,7 +100,7 @@ CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
 am__dirstamp = $(am__leading_dot)dirstamp
-am_black_OBJECTS = src/Button.$(OBJEXT) src/Camera.$(OBJEXT) \
+am_blackshades_OBJECTS = src/Button.$(OBJEXT) src/Camera.$(OBJEXT) \
 	src/Config.$(OBJEXT) src/Decals.$(OBJEXT) src/Fog.$(OBJEXT) \
 	src/Font.$(OBJEXT) src/Frustum.$(OBJEXT) src/Game.$(OBJEXT) \
 	src/GameDraw.$(OBJEXT) src/GameInitDispose.$(OBJEXT) \
@@ -113,8 +113,8 @@ am_black_OBJECTS = src/Button.$(OBJEXT) src/Camera.$(OBJEXT) \
 	src/Sprites.$(OBJEXT) src/Support.$(OBJEXT) \
 	src/TGALoader.$(OBJEXT) src/Text.$(OBJEXT) \
 	src/Weapon.$(OBJEXT) src/Window.$(OBJEXT)
-black_OBJECTS = $(am_black_OBJECTS)
-black_LDADD = $(LDADD)
+blackshades_OBJECTS = $(am_blackshades_OBJECTS)
+blackshades_LDADD = $(LDADD)
 AM_V_P = $(am__v_P_$(V))
 am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))
 am__v_P_0 = false
@@ -144,8 +144,20 @@ AM_V_CXXLD = $(am__v_CXXLD_$(V))
 am__v_CXXLD_ = $(am__v_CXXLD_$(AM_DEFAULT_VERBOSITY))
 am__v_CXXLD_0 = @echo "  CXXLD   " $@;
 am__v_CXXLD_1 = 
-SOURCES = $(black_SOURCES)
-DIST_SOURCES = $(black_SOURCES)
+COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \
+	$(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
+AM_V_CC = $(am__v_CC_$(V))
+am__v_CC_ = $(am__v_CC_$(AM_DEFAULT_VERBOSITY))
+am__v_CC_0 = @echo "  CC      " $@;
+am__v_CC_1 = 
+CCLD = $(CC)
+LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@
+AM_V_CCLD = $(am__v_CCLD_$(V))
+am__v_CCLD_ = $(am__v_CCLD_$(AM_DEFAULT_VERBOSITY))
+am__v_CCLD_0 = @echo "  CCLD    " $@;
+am__v_CCLD_1 = 
+SOURCES = $(blackshades_SOURCES)
+DIST_SOURCES = $(blackshades_SOURCES)
 am__can_run_installinfo = \
   case $$AM_UPDATE_INFO_DIR in \
     n|no|NO) false;; \
@@ -222,11 +234,11 @@ LTLIBOBJS =
 MAKEINFO = makeinfo
 MKDIR_P = /usr/bin/mkdir -p
 OBJEXT = o
-PACKAGE = buster
+PACKAGE = bustershades
 PACKAGE_BUGREPORT = bkeys@bkeys.org
-PACKAGE_NAME = buster
-PACKAGE_STRING = buster 1
-PACKAGE_TARNAME = buster
+PACKAGE_NAME = blackshades
+PACKAGE_STRING = blackshades 1
+PACKAGE_TARNAME = bustershades
 PACKAGE_URL = http://www.bkeys.org
 PACKAGE_VERSION = 1
 PATH_SEPARATOR = :
@@ -234,10 +246,10 @@ SET_MAKE =
 SHELL = /bin/sh
 STRIP = 
 VERSION = 1
-abs_builddir = /home/bkeys/Downloads/blackshadeselite
-abs_srcdir = /home/bkeys/Downloads/blackshadeselite
-abs_top_builddir = /home/bkeys/Downloads/blackshadeselite
-abs_top_srcdir = /home/bkeys/Downloads/blackshadeselite
+abs_builddir = /home/bkeys/Devel/blackshades
+abs_srcdir = /home/bkeys/Devel/blackshades
+abs_top_builddir = /home/bkeys/Devel/blackshades
+abs_top_srcdir = /home/bkeys/Devel/blackshades
 ac_ct_CC = gcc
 ac_ct_CXX = g++
 am__include = include
@@ -279,36 +291,65 @@ top_builddir = .
 top_srcdir = .
 
 #files of project
-black_SOURCES = \
+blackshades_SOURCES = \
+src/Button.hpp \
 src/Button.cpp \
+src/Camera.hpp \
 src/Camera.cpp \
+src/Config.hpp \
 src/Config.cpp \
+src/Decals.hpp \
 src/Decals.cpp \
+src/Fog.hpp \
 src/Fog.cpp \
+src/Font.hpp \
 src/Font.cpp \
+src/Frustum.hpp \
 src/Frustum.cpp \
+src/Game.hpp \
 src/Game.cpp \
+src/GameDraw.hpp \
 src/GameDraw.cpp \
+src/GameInitDispose.hpp \
 src/GameInitDispose.cpp \
+src/GameLoop.hpp \
 src/GameLoop.cpp \
+src/GameTick.hpp \
 src/GameTick.cpp \
+src/Globals.hpp \
 src/Globals.cpp \
+src/Image.hpp \
 src/Image.cpp \
+src/Label.hpp \
 src/Label.cpp \
+src/MacInput.hpp \
 src/MacInput.cpp \
 src/Main.cpp \
+src/Maths.hpp \
 src/Maths.cpp \
+src/Models.hpp \
 src/Models.cpp \
+src/Person.hpp \
 src/Person.cpp \
+src/Quaternions.hpp \
 src/Quaternions.cpp \
+src/SDL_funcs.hpp \
 src/SDL_funcs.cpp \
+src/Serialize.hpp \
 src/Serialize.cpp \
+src/Skeleton.hpp \
 src/Skeleton.cpp \
+src/Sprites.hpp \
 src/Sprites.cpp \
+src/Support.hpp \
 src/Support.cpp \
+src/TGALoader.hpp \
 src/TGALoader.cpp \
+src/Text.hpp \
 src/Text.cpp \
+src/Weapon.hpp \
 src/Weapon.cpp \
+src/Window.hpp \
 src/Window.cpp 
 
 AM_CXXFLAGS = -pedantic -O3 -std=c++14 -Werror -g 
@@ -470,9 +511,9 @@ src/Weapon.$(OBJEXT): src/$(am__dirstamp) \
 src/Window.$(OBJEXT): src/$(am__dirstamp) \
 	src/$(DEPDIR)/$(am__dirstamp)
 
-black$(EXEEXT): $(black_OBJECTS) $(black_DEPENDENCIES) $(EXTRA_black_DEPENDENCIES) 
-	@rm -f black$(EXEEXT)
-	$(AM_V_CXXLD)$(CXXLINK) $(black_OBJECTS) $(black_LDADD) $(LIBS)
+blackshades$(EXEEXT): $(blackshades_OBJECTS) $(blackshades_DEPENDENCIES) $(EXTRA_blackshades_DEPENDENCIES) 
+	@rm -f blackshades$(EXEEXT)
+	$(AM_V_CXXLD)$(CXXLINK) $(blackshades_OBJECTS) $(blackshades_LDADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)

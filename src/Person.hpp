@@ -24,14 +24,14 @@
 #include <GL/gl.h>
 #include <AL/al.h>
 #include <AL/alut.h>
-#include "Quaternions.h"
-#include "Constants.h"
-#include "Skeleton.h"
-#include "Models.h"
-#include "Camera.h"
-#include "Sprites.h"
-#include "Globals.h"
-#include "Weapon.h"
+#include "Quaternions.hpp"
+#include "Constants.hpp"
+#include "Skeleton.hpp"
+#include "Models.hpp"
+#include "Camera.hpp"
+#include "Sprites.hpp"
+#include "Globals.hpp"
+#include "Weapon.hpp"
 
 #define playertype 0
 #define civiliantype 1

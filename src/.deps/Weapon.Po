@@ -1,5 +1,6 @@
-src/Weapon.o: src/Weapon.cpp /usr/include/stdc-predef.h src/Weapon.h \
- src/Config.h src/Quaternions.h src/Maths.h /usr/include/c++/4.9.2/cmath \
+src/Weapon.o: src/Weapon.cpp /usr/include/stdc-predef.h src/Weapon.hpp \
+ src/Config.hpp src/Quaternions.hpp src/Maths.hpp \
+ /usr/include/c++/4.9.2/cmath \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/os_defines.h \
@@ -16,17 +17,17 @@ src/Weapon.o: src/Weapon.cpp /usr/include/stdc-predef.h src/Weapon.h \
  /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stddef.h \
  /usr/include/inttypes.h \
  /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/wchar.h src/PhysicsMath.h
+ /usr/include/stdint.h /usr/include/bits/wchar.h src/PhysicsMath.hpp
 
 /usr/include/stdc-predef.h:
 
-src/Weapon.h:
+src/Weapon.hpp:
 
-src/Config.h:
+src/Config.hpp:
 
-src/Quaternions.h:
+src/Quaternions.hpp:
 
-src/Maths.h:
+src/Maths.hpp:
 
 /usr/include/c++/4.9.2/cmath:
 
@@ -82,4 +83,4 @@ src/Maths.h:
 
 /usr/include/bits/wchar.h:
 
-src/PhysicsMath.h:
+src/PhysicsMath.hpp:

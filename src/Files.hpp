@@ -31,7 +31,7 @@
 #include <fstream>
 #include <GL/gl.h>
 #include <GL/glu.h>
-#include "MacInput.h"           // Header for Special Mac Input functions
+#include "MacInput.hpp"           // Header for Special Mac Input functions
 
 #define FILE_STRINGS              130
 #define Pstr unsigned char *

@@ -22,8 +22,8 @@
 /**> HEADER FILES <**/
 #include <GL/gl.h>
 
-#include "Quaternions.h"
-#include "Support.h"
+#include "Quaternions.hpp"
+#include "Support.hpp"
 
 class Camera {
 public:

@@ -1,10 +1,10 @@
 /*
- * Font.h
+ * Weapon.h
  * Copyright (C) 2007 by Bryan Duff <duff0097@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 3 of the License, or
+ * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
@@ -17,24 +17,27 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
  * USA
  */
-#pragma once
+#ifndef _WEAPON_H_
+#define _WEAPON_H_
 
-#include "Quaternions.h"
-#include <GL/gl.h>
-#include <GL/glu.h>
-#include "Files.h"
-#include "Quaternions.h"
-#include "TGALoader.h"
+#include "Config.hpp"
+#include "Quaternions.hpp"
 
-class Font {
+#define RAD2DEG 		56.54866776;
+
+//this should be within the Person class (since everyone has one).
+class Weapon {
 public:
-  GLuint FontTexture;
-  GLuint base;
-
-  void LoadFontTexture(const char *fileName);
-  void BuildFont();
-
-   ~Font() {
-    glDeleteTextures(1, (const GLuint *)&FontTexture);
-  };
+  int type; //ditto: int whichgun;
+  int ammo;
+  int reloads; //magazines
+  float reloading;
+  float gunrotate1, gunrotate2, gunrotate3;
+  float recoil;
+  float shotdelay;
+  //Used in Person::DrawSkeleton()
+  void FindRotationGun(XYZ start, XYZ target); 
+  //void Reload();
 };
+
+#endif

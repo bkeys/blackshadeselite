@@ -18,8 +18,8 @@
  * USA
  */
 
-#include "Constants.h"
-#include "Viewer.h"
+#include "Constants.hpp"
+#include "Viewer.hpp"
 
 Animation animation[30];
 Model skeletonmodels[10];
@@ -220,7 +220,7 @@ Viewer::setup()
     animation[assaultrifleaimanim].
         Load((char *)"Data/Animations/AssaultRifleaim");
 
-    animation[crouchanim].Load((char *)"Data/Animations/Crouch");
+    animation[crouchanim].Load((char *)"Data/Animations/Crou.hpp");
 
     animation[headpainanim].Load((char *)"Data/Animations/Headshot");
     animation[chestpainanim].Load((char *)"Data/Animations/Chestshot");
@@ -235,7 +235,7 @@ Viewer::setup()
     animation[grenadechargeanim].Load((char *)"Data/Animations/grenadecharge");
 
     animation[grenadethrowanim].Load((char *)"Data/Animations/grenadethrow");
-    animation[zombieeatanim].Load((char *)"Data/Animations/Zombiemunch");
+    animation[zombieeatanim].Load((char *)"Data/Animations/Zombiemun.hpp");
     animation[zombiejoganim].Load((char *)"Data/Animations/ZombieRun");
     animation[zombiewalkanim].Load((char *)"Data/Animations/Zombiewalk");
 

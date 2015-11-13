@@ -1,5 +1,5 @@
-src/Decals.o: src/Decals.cpp /usr/include/stdc-predef.h src/Decals.h \
- src/Quaternions.h src/Maths.h /usr/include/c++/4.9.2/cmath \
+src/Decals.o: src/Decals.cpp /usr/include/stdc-predef.h src/Decals.hpp \
+ src/Quaternions.hpp src/Maths.hpp /usr/include/c++/4.9.2/cmath \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/os_defines.h \
@@ -16,8 +16,8 @@ src/Decals.o: src/Decals.cpp /usr/include/stdc-predef.h src/Decals.h \
  /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stddef.h \
  /usr/include/inttypes.h \
  /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/wchar.h src/PhysicsMath.h \
- src/Files.h /usr/include/stdio.h /usr/include/bits/types.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h src/PhysicsMath.hpp \
+ src/Files.hpp /usr/include/stdio.h /usr/include/bits/types.h \
  /usr/include/bits/typesizes.h /usr/include/libio.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stdarg.h \
@@ -105,19 +105,20 @@ src/Decals.o: src/Decals.cpp /usr/include/stdc-predef.h src/Decals.h \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/basic_file.h \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/c++io.h \
  /usr/include/c++/4.9.2/bits/fstream.tcc /usr/include/GL/glu.h \
- src/MacInput.h src/Support.h /usr/include/unistd.h \
+ src/MacInput.hpp src/Support.hpp /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
  /usr/include/bits/confname.h /usr/include/getopt.h /usr/include/AL/al.h \
- /usr/include/AL/alut.h /usr/include/AL/alc.h src/TGALoader.h \
- src/Camera.h src/Models.h src/Constants.h src/Fog.h src/Colors.h
+ /usr/include/AL/alut.h /usr/include/AL/alc.h src/TGALoader.hpp \
+ src/Camera.hpp src/Models.hpp src/Constants.hpp src/Fog.hpp \
+ src/Colors.hpp
 
 /usr/include/stdc-predef.h:
 
-src/Decals.h:
+src/Decals.hpp:
 
-src/Quaternions.h:
+src/Quaternions.hpp:
 
-src/Maths.h:
+src/Maths.hpp:
 
 /usr/include/c++/4.9.2/cmath:
 
@@ -173,9 +174,9 @@ src/Maths.h:
 
 /usr/include/bits/wchar.h:
 
-src/PhysicsMath.h:
+src/PhysicsMath.hpp:
 
-src/Files.h:
+src/Files.hpp:
 
 /usr/include/stdio.h:
 
@@ -423,9 +424,9 @@ src/Files.h:
 
 /usr/include/GL/glu.h:
 
-src/MacInput.h:
+src/MacInput.hpp:
 
-src/Support.h:
+src/Support.hpp:
 
 /usr/include/unistd.h:
 
@@ -443,14 +444,14 @@ src/Support.h:
 
 /usr/include/AL/alc.h:
 
-src/TGALoader.h:
+src/TGALoader.hpp:
 
-src/Camera.h:
+src/Camera.hpp:
 
-src/Models.h:
+src/Models.hpp:
 
-src/Constants.h:
+src/Constants.hpp:
 
-src/Fog.h:
+src/Fog.hpp:
 
-src/Colors.h:
+src/Colors.hpp:

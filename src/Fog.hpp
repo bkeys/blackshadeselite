@@ -1,10 +1,10 @@
 /*
- * Weapon.h
+ * Fog.h
  * Copyright (C) 2007 by Bryan Duff <duff0097@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
+ * the Free Software Foundation; either version 3 of the License, or
  * (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
@@ -17,27 +17,26 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
  * USA
  */
-#ifndef _WEAPON_H_
-#define _WEAPON_H_
+#pragma once
 
-#include "Config.h"
-#include "Quaternions.h"
+/**> HEADER FILES <**/
+#include <GL/gl.h>
+#include "Quaternions.hpp"
+#include "Colors.hpp"
 
-#define RAD2DEG 		56.54866776;
-
-//this should be within the Person class (since everyone has one).
-class Weapon {
+class Fog {
 public:
-  int type; //ditto: int whichgun;
-  int ammo;
-  int reloads; //magazines
-  float reloading;
-  float gunrotate1, gunrotate2, gunrotate3;
-  float recoil;
-  float shotdelay;
-  //Used in Person::DrawSkeleton()
-  void FindRotationGun(XYZ start, XYZ target); 
-  //void Reload();
-};
+  GLfloat fogColor[4];
+  GLint fogMode;
+  GLfloat fogDensity;
+  GLfloat fogStart;
+  GLfloat fogEnd;
 
-#endif
+  Color fogcolor;               //this should probably be in Environment
+
+  void SetFog(float colorR, float colorG, float colorB, float fStart,
+              float fEnd, float fogDensity);
+  void SetFog(Color newColor, float fStart, float fEnd, float fogDensity);
+  void TempFog(float colorR, float colorG, float colorB);
+  void ResetFog();
+};

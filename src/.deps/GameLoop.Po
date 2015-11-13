@@ -1,5 +1,5 @@
 src/GameLoop.o: src/GameLoop.cpp /usr/include/stdc-predef.h \
- src/SDL_funcs.h /usr/include/GL/gl.h /usr/include/GL/glext.h \
+ src/SDL_funcs.hpp /usr/include/GL/gl.h /usr/include/GL/glext.h \
  /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stddef.h \
  /usr/include/inttypes.h /usr/include/features.h /usr/include/sys/cdefs.h \
  /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
@@ -36,22 +36,22 @@ src/GameLoop.o: src/GameLoop.cpp /usr/include/stdc-predef.h \
  /usr/include/SDL/SDL_quit.h /usr/include/SDL/SDL_loadso.h \
  /usr/include/SDL/SDL_timer.h /usr/include/SDL/SDL_version.h \
  /usr/include/AL/al.h /usr/include/AL/alut.h /usr/include/AL/alc.h \
- src/Game.h /usr/include/c++/4.9.2/cstdarg \
+ src/Game.hpp /usr/include/c++/4.9.2/cstdarg \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/os_defines.h \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/cpu_defines.h \
- src/MacInput.h src/Support.h /usr/include/unistd.h \
+ src/MacInput.hpp src/Support.hpp /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
- /usr/include/bits/confname.h /usr/include/getopt.h src/Quaternions.h \
- src/Maths.h /usr/include/c++/4.9.2/cmath \
+ /usr/include/bits/confname.h /usr/include/getopt.h src/Quaternions.hpp \
+ src/Maths.hpp /usr/include/c++/4.9.2/cmath \
  /usr/include/c++/4.9.2/bits/cpp_type_traits.h \
  /usr/include/c++/4.9.2/ext/type_traits.h /usr/include/math.h \
  /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
  /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
  /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
  /usr/include/bits/mathcalls.h /usr/include/bits/mathinline.h \
- src/PhysicsMath.h src/Camera.h src/Skeleton.h src/Constants.h \
- src/Files.h /usr/include/c++/4.9.2/iostream \
+ src/PhysicsMath.hpp src/Camera.hpp src/Skeleton.hpp src/Constants.hpp \
+ src/Files.hpp /usr/include/c++/4.9.2/iostream \
  /usr/include/c++/4.9.2/ostream /usr/include/c++/4.9.2/ios \
  /usr/include/c++/4.9.2/iosfwd /usr/include/c++/4.9.2/bits/stringfwd.h \
  /usr/include/c++/4.9.2/bits/memoryfwd.h \
@@ -122,10 +122,11 @@ src/GameLoop.o: src/GameLoop.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/4.9.2/bits/codecvt.h \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/basic_file.h \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/c++io.h \
- /usr/include/c++/4.9.2/bits/fstream.tcc src/Models.h src/Globals.h \
- src/Colors.h src/Config.h src/Text.h src/TGALoader.h src/Fog.h \
- src/Font.h src/Frustum.h src/Sprites.h src/Person.h src/Weapon.h \
- src/Decals.h src/Threads.h /usr/include/c++/4.9.2/memory \
+ /usr/include/c++/4.9.2/bits/fstream.tcc src/Models.hpp src/Globals.hpp \
+ src/Colors.hpp src/Config.hpp src/Text.hpp src/TGALoader.hpp src/Fog.hpp \
+ src/Font.hpp src/Frustum.hpp src/Sprites.hpp src/Person.hpp \
+ src/Weapon.hpp src/Decals.hpp src/Threads.hpp \
+ /usr/include/c++/4.9.2/memory \
  /usr/include/c++/4.9.2/bits/stl_construct.h \
  /usr/include/c++/4.9.2/ext/alloc_traits.h \
  /usr/include/c++/4.9.2/bits/alloc_traits.h \
@@ -141,15 +142,15 @@ src/GameLoop.o: src/GameLoop.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/4.9.2/bits/shared_ptr.h \
  /usr/include/c++/4.9.2/bits/shared_ptr_base.h \
  /usr/include/c++/4.9.2/ext/aligned_buffer.h \
- /usr/include/c++/4.9.2/backward/auto_ptr.h src/Window.h \
+ /usr/include/c++/4.9.2/backward/auto_ptr.h src/Window.hpp \
  /usr/include/c++/4.9.2/vector /usr/include/c++/4.9.2/bits/stl_vector.h \
  /usr/include/c++/4.9.2/bits/stl_bvector.h \
- /usr/include/c++/4.9.2/bits/vector.tcc src/Label.h src/Image.h \
- src/Button.h
+ /usr/include/c++/4.9.2/bits/vector.tcc src/Label.hpp src/Image.hpp \
+ src/Button.hpp
 
 /usr/include/stdc-predef.h:
 
-src/SDL_funcs.h:
+src/SDL_funcs.hpp:
 
 /usr/include/GL/gl.h:
 
@@ -303,7 +304,7 @@ src/SDL_funcs.h:
 
 /usr/include/AL/alc.h:
 
-src/Game.h:
+src/Game.hpp:
 
 /usr/include/c++/4.9.2/cstdarg:
 
@@ -313,9 +314,9 @@ src/Game.h:
 
 /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/cpu_defines.h:
 
-src/MacInput.h:
+src/MacInput.hpp:
 
-src/Support.h:
+src/Support.hpp:
 
 /usr/include/unistd.h:
 
@@ -327,9 +328,9 @@ src/Support.h:
 
 /usr/include/getopt.h:
 
-src/Quaternions.h:
+src/Quaternions.hpp:
 
-src/Maths.h:
+src/Maths.hpp:
 
 /usr/include/c++/4.9.2/cmath:
 
@@ -355,15 +356,15 @@ src/Maths.h:
 
 /usr/include/bits/mathinline.h:
 
-src/PhysicsMath.h:
+src/PhysicsMath.hpp:
 
-src/Camera.h:
+src/Camera.hpp:
 
-src/Skeleton.h:
+src/Skeleton.hpp:
 
-src/Constants.h:
+src/Constants.hpp:
 
-src/Files.h:
+src/Files.hpp:
 
 /usr/include/c++/4.9.2/iostream:
 
@@ -545,33 +546,33 @@ src/Files.h:
 
 /usr/include/c++/4.9.2/bits/fstream.tcc:
 
-src/Models.h:
+src/Models.hpp:
 
-src/Globals.h:
+src/Globals.hpp:
 
-src/Colors.h:
+src/Colors.hpp:
 
-src/Config.h:
+src/Config.hpp:
 
-src/Text.h:
+src/Text.hpp:
 
-src/TGALoader.h:
+src/TGALoader.hpp:
 
-src/Fog.h:
+src/Fog.hpp:
 
-src/Font.h:
+src/Font.hpp:
 
-src/Frustum.h:
+src/Frustum.hpp:
 
-src/Sprites.h:
+src/Sprites.hpp:
 
-src/Person.h:
+src/Person.hpp:
 
-src/Weapon.h:
+src/Weapon.hpp:
 
-src/Decals.h:
+src/Decals.hpp:
 
-src/Threads.h:
+src/Threads.hpp:
 
 /usr/include/c++/4.9.2/memory:
 
@@ -615,7 +616,7 @@ src/Threads.h:
 
 /usr/include/c++/4.9.2/backward/auto_ptr.h:
 
-src/Window.h:
+src/Window.hpp:
 
 /usr/include/c++/4.9.2/vector:
 
@@ -625,8 +626,8 @@ src/Window.h:
 
 /usr/include/c++/4.9.2/bits/vector.tcc:
 
-src/Label.h:
+src/Label.hpp:
 
-src/Image.h:
+src/Image.hpp:
 
-src/Button.h:
+src/Button.hpp:

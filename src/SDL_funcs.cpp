@@ -18,10 +18,10 @@
  * USA
  */
 
-#include "Game.h"
-#include "MacInput.h"
+#include "Game.hpp"
+#include "MacInput.hpp"
 
-#include "SDL_funcs.h"
+#include "SDL_funcs.hpp"
 extern Config config;
 
 static int sdlkeymap[SDLK_LAST];

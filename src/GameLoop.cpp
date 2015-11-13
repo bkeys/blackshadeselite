@@ -18,8 +18,8 @@
  * USA
  */
 
-#include "SDL_funcs.h"
-#include "Game.h"
+#include "SDL_funcs.hpp"
+#include "Game.hpp"
 
 extern unsigned int gSourceID[100];
 extern unsigned int gSampleSet[100];

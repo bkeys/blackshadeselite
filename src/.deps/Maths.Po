@@ -1,4 +1,4 @@
-src/Maths.o: src/Maths.cpp /usr/include/stdc-predef.h src/Maths.h \
+src/Maths.o: src/Maths.cpp /usr/include/stdc-predef.h src/Maths.hpp \
  /usr/include/c++/4.9.2/cmath \
  /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -15,7 +15,7 @@ src/Maths.o: src/Maths.cpp /usr/include/stdc-predef.h src/Maths.h \
 
 /usr/include/stdc-predef.h:
 
-src/Maths.h:
+src/Maths.hpp:
 
 /usr/include/c++/4.9.2/cmath:
 

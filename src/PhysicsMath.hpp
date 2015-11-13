@@ -22,7 +22,7 @@
 
 #include <cmath>
 
-#include "Quaternions.h"
+#include "Quaternions.hpp"
 
 //------------------------------------------------------------------------//
 // Misc. Constants

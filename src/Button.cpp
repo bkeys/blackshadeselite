@@ -18,7 +18,7 @@
  * USA
  */
 
-#include "Button.h"
+#include "Button.hpp"
 
 Button::Button()
 {

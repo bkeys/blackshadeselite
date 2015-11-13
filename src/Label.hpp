@@ -1,5 +1,5 @@
 /*
- * Button.h 
+ * Label.h
  * Copyright (C) 2007 by Bryan Duff <duff0097@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -17,36 +17,40 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
  * USA
  */
-#ifndef _GUI_BUTTON_H_
-#define _GUI_BUTTON_H_
+#ifndef _GUI_LABEL_H_
+#define _GUI_LABEL_H_
 
-#include <string>
+#include "Quaternions.hpp"
 #include <GL/gl.h>
 #include <GL/glu.h>
 
-#include "Quaternions.h"
-#include "Window.h"
+#include <string>
 
-/* Currently this is only a logical button (it doesn't display anything)
- * it consists only of state information.
- * TODO: DrawButton() would consist of drawing a child text and image window.
- */
+#include "Window.hpp"
+#include "Colors.hpp"
 
-class Button : public Window {
+class Label:public Window {
 public:
-  Button();
-  Button(float xpos, float ypos, float xwidth, float yheight);
-  ~Button() {};
-  void setButton(float xpos, float ypos, float xwidth, float yheight);
-  bool isMouseOver(bool recalc, float _xpos=0, float _ypos=0);
-  void setPressed(bool _pressed) { pressed = _pressed; }
-  bool isPressed() { return pressed; }
+  Label();
+  ~Label() {
+    text.clear();
+  };
+  void setLabel(float xpos, float ypos, float size);
+  void setFont(int set, GLuint _base, GLuint _texture);
+  void setText(const char *text);
+  void setColor(Color _color);
+  void draw();
 
 private:
   GLfloat xpos, ypos;
-  GLfloat xwidth, yheight;
-  bool mouseover;
-  bool pressed;
+  float size;
+  string text;
+  Color color;
+
+  //Font stuff
+  int fontSet;
+  GLuint texture;
+  GLuint base;
 };
 
 #endif

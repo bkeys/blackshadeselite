@@ -21,9 +21,9 @@
 #ifndef _QUATERNIONS_H_
 #define _QUATERNIONS_H_
 
-#include "Maths.h"
+#include "Maths.hpp"
 #include <GL/gl.h>
-#include "PhysicsMath.h"
+#include "PhysicsMath.hpp"
 
 /**> Quaternion Structures <**/
 #define PI      3.14159265355555897932384626
