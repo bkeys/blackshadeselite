@@ -1,5 +1,5 @@
 #AUTOCONF REQUIREMENTS
-AC_INIT([blackshades], [1], [bkeys@bkeys.org], [bustershades], [http://www.bkeys.org])
+AC_INIT([blackshades], [.9], [bkeys@bkeys.org], [blackshades], [http://www.bkeys.org])
 
 #AUTOCONF MINIMUM VERSION NUMBER
 AC_PREREQ(2.68)

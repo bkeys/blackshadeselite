@@ -8,6 +8,8 @@ src/Camera.hpp \
 src/Camera.cpp \
 src/Config.hpp \
 src/Config.cpp \
+src/Colors.hpp \
+src/Constants.hpp \
 src/Decals.hpp \
 src/Decals.cpp \
 src/Fog.hpp \
@@ -18,13 +20,9 @@ src/Frustum.hpp \
 src/Frustum.cpp \
 src/Game.hpp \
 src/Game.cpp \
-src/GameDraw.hpp \
 src/GameDraw.cpp \
-src/GameInitDispose.hpp \
 src/GameInitDispose.cpp \
-src/GameLoop.hpp \
 src/GameLoop.cpp \
-src/GameTick.hpp \
 src/GameTick.cpp \
 src/Globals.hpp \
 src/Globals.cpp \
@@ -39,6 +37,7 @@ src/Maths.hpp \
 src/Maths.cpp \
 src/Models.hpp \
 src/Models.cpp \
+src/PhysicsMath.hpp\
 src/Person.hpp \
 src/Person.cpp \
 src/Quaternions.hpp \
@@ -55,6 +54,9 @@ src/Support.hpp \
 src/Support.cpp \
 src/TGALoader.hpp \
 src/TGALoader.cpp \
+src/Threads.hpp \
+src/Files.hpp \
+src/Files.cpp \
 src/Text.hpp \
 src/Text.cpp \
 src/Weapon.hpp \
@@ -62,8 +64,8 @@ src/Weapon.cpp \
 src/Window.hpp \
 src/Window.cpp 
 
-AM_CXXFLAGS = -pedantic -O3 -std=c++14 -Werror -g 
+AM_CXXFLAGS = -pedantic -O3 -std=c++14 -g 
 #using an m4 directory for macros
 ACLOCAL_AMFLAGS = -I m4 --install
 #letting autoconf know about the m4 dir
-EXTRA_DIST = m4/NOTES
+#EXTRA_DIST = m4/NOTES

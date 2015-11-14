@@ -20,7 +20,6 @@
 #ifndef _FILES_H_
 #define _FILES_H_
 
-#include <stdio.h>
 #include <stdlib.h>             // Header File For Standard functions
 #include <stdio.h>              // Header File For Standard Input/Output
 #include <string.h>
@@ -34,8 +33,6 @@
 #include "MacInput.hpp"           // Header for Special Mac Input functions
 
 #define FILE_STRINGS              130
-#define Pstr unsigned char *
-#define Cstr char *
 
 #define FILE_ERROR_ALERT          138
 #define OLD_SAVE_VERSION          139
@@ -76,8 +73,8 @@ public:
 
   int OpenFile(Str255 Name);
     Files():sFile(-1) {
-  }
-  short OpenSavedGame(Str255 Name);
+    }
+  static short OpenSavedGame(Str255 Name);
   short OpenFileDialog();
   void LoadNamedMap(Str255 Name);
   void LoadGame(Str255 Name, int animnum);

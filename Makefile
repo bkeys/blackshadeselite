@@ -60,10 +60,10 @@ am__make_running_with_option = \
   test $$has_opt = yes
 am__make_dryrun = (target_option=n; $(am__make_running_with_option))
 am__make_keepgoing = (target_option=k; $(am__make_running_with_option))
-pkgdatadir = $(datadir)/bustershades
-pkgincludedir = $(includedir)/bustershades
-pkglibdir = $(libdir)/bustershades
-pkglibexecdir = $(libexecdir)/bustershades
+pkgdatadir = $(datadir)/blackshades
+pkgincludedir = $(includedir)/blackshades
+pkglibdir = $(libdir)/blackshades
+pkglibexecdir = $(libexecdir)/blackshades
 am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
 install_sh_DATA = $(install_sh) -c -m 644
 install_sh_PROGRAM = $(install_sh) -c
@@ -111,7 +111,7 @@ am_blackshades_OBJECTS = src/Button.$(OBJEXT) src/Camera.$(OBJEXT) \
 	src/Quaternions.$(OBJEXT) src/SDL_funcs.$(OBJEXT) \
 	src/Serialize.$(OBJEXT) src/Skeleton.$(OBJEXT) \
 	src/Sprites.$(OBJEXT) src/Support.$(OBJEXT) \
-	src/TGALoader.$(OBJEXT) src/Text.$(OBJEXT) \
+	src/TGALoader.$(OBJEXT) src/Files.$(OBJEXT) src/Text.$(OBJEXT) \
 	src/Weapon.$(OBJEXT) src/Window.$(OBJEXT)
 blackshades_OBJECTS = $(am_blackshades_OBJECTS)
 blackshades_LDADD = $(LDADD)
@@ -234,22 +234,22 @@ LTLIBOBJS =
 MAKEINFO = makeinfo
 MKDIR_P = /usr/bin/mkdir -p
 OBJEXT = o
-PACKAGE = bustershades
+PACKAGE = blackshades
 PACKAGE_BUGREPORT = bkeys@bkeys.org
 PACKAGE_NAME = blackshades
-PACKAGE_STRING = blackshades 1
-PACKAGE_TARNAME = bustershades
+PACKAGE_STRING = blackshades .9
+PACKAGE_TARNAME = blackshades
 PACKAGE_URL = http://www.bkeys.org
-PACKAGE_VERSION = 1
+PACKAGE_VERSION = .9
 PATH_SEPARATOR = :
 SET_MAKE = 
 SHELL = /bin/sh
 STRIP = 
-VERSION = 1
-abs_builddir = /home/bkeys/Devel/blackshades
-abs_srcdir = /home/bkeys/Devel/blackshades
-abs_top_builddir = /home/bkeys/Devel/blackshades
-abs_top_srcdir = /home/bkeys/Devel/blackshades
+VERSION = .9
+abs_builddir = /home/bkeys/Devel/blackshadeselite
+abs_srcdir = /home/bkeys/Devel/blackshadeselite
+abs_top_builddir = /home/bkeys/Devel/blackshadeselite
+abs_top_srcdir = /home/bkeys/Devel/blackshadeselite
 ac_ct_CC = gcc
 ac_ct_CXX = g++
 am__include = include
@@ -298,6 +298,8 @@ src/Camera.hpp \
 src/Camera.cpp \
 src/Config.hpp \
 src/Config.cpp \
+src/Colors.hpp \
+src/Constants.hpp \
 src/Decals.hpp \
 src/Decals.cpp \
 src/Fog.hpp \
@@ -308,13 +310,9 @@ src/Frustum.hpp \
 src/Frustum.cpp \
 src/Game.hpp \
 src/Game.cpp \
-src/GameDraw.hpp \
 src/GameDraw.cpp \
-src/GameInitDispose.hpp \
 src/GameInitDispose.cpp \
-src/GameLoop.hpp \
 src/GameLoop.cpp \
-src/GameTick.hpp \
 src/GameTick.cpp \
 src/Globals.hpp \
 src/Globals.cpp \
@@ -329,6 +327,7 @@ src/Maths.hpp \
 src/Maths.cpp \
 src/Models.hpp \
 src/Models.cpp \
+src/PhysicsMath.hpp\
 src/Person.hpp \
 src/Person.cpp \
 src/Quaternions.hpp \
@@ -345,6 +344,9 @@ src/Support.hpp \
 src/Support.cpp \
 src/TGALoader.hpp \
 src/TGALoader.cpp \
+src/Threads.hpp \
+src/Files.hpp \
+src/Files.cpp \
 src/Text.hpp \
 src/Text.cpp \
 src/Weapon.hpp \
@@ -352,11 +354,9 @@ src/Weapon.cpp \
 src/Window.hpp \
 src/Window.cpp 
 
-AM_CXXFLAGS = -pedantic -O3 -std=c++14 -Werror -g 
+AM_CXXFLAGS = -pedantic -O3 -std=c++14 -g 
 #using an m4 directory for macros
 ACLOCAL_AMFLAGS = -I m4 --install
-#letting autoconf know about the m4 dir
-EXTRA_DIST = m4/NOTES
 all: all-am
 
 .SUFFIXES:
@@ -505,6 +505,7 @@ src/Support.$(OBJEXT): src/$(am__dirstamp) \
 	src/$(DEPDIR)/$(am__dirstamp)
 src/TGALoader.$(OBJEXT): src/$(am__dirstamp) \
 	src/$(DEPDIR)/$(am__dirstamp)
+src/Files.$(OBJEXT): src/$(am__dirstamp) src/$(DEPDIR)/$(am__dirstamp)
 src/Text.$(OBJEXT): src/$(am__dirstamp) src/$(DEPDIR)/$(am__dirstamp)
 src/Weapon.$(OBJEXT): src/$(am__dirstamp) \
 	src/$(DEPDIR)/$(am__dirstamp)
@@ -526,6 +527,7 @@ include src/$(DEPDIR)/Button.Po
 include src/$(DEPDIR)/Camera.Po
 include src/$(DEPDIR)/Config.Po
 include src/$(DEPDIR)/Decals.Po
+include src/$(DEPDIR)/Files.Po
 include src/$(DEPDIR)/Fog.Po
 include src/$(DEPDIR)/Font.Po
 include src/$(DEPDIR)/Frustum.Po
@@ -921,6 +923,8 @@ uninstall-am: uninstall-binPROGRAMS
 	mostlyclean-generic pdf pdf-am ps ps-am tags tags-am uninstall \
 	uninstall-am uninstall-binPROGRAMS
 
+#letting autoconf know about the m4 dir
+#EXTRA_DIST = m4/NOTES
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

@@ -1,5 +1,6 @@
 >remove files that are not currently needed
 >make the compiler as strict as possible
+>Fix the crouching animation bug, it is probably a file not being read somewhere.
 
 >spruce up the main menu to make it actually functional
 >create a functional GUI
