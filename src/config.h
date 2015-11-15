@@ -32,7 +32,7 @@
 #define PACKAGE_NAME "blackshades"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "blackshades .9"
+#define PACKAGE_STRING "blackshades 0.9"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "blackshades"
@@ -41,7 +41,7 @@
 #define PACKAGE_URL "http://www.bkeys.org"
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION ".9"
+#define PACKAGE_VERSION "0.9"
 
 /* Version number of package */
-#define VERSION ".9"
+#define VERSION "0.9"
